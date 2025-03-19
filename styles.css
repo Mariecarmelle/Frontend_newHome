@@ -1,8 +1,72 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 80px 120px;
 }
 .navbar {
     display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+.navbar_left {
+    display: flex;
+    align-items: center;
+    /* gap: 90px; */
+}
+.navbar__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+}
+.navbar__list a {
+    text-decoration: none;
+    color: hsl(240, 100%, 5%);
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.7;
+}
+.navbar__list a:hover {
+    opacity: 1;
+    color: hsl(5, 85%, 63%);
+}
+.bloc__left {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    gap: 20px;
+    width: 60%;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 10px; */
+    width: 100%;
+}
+.title h1 {
+    font-size: 50px;
+    /* color: hsl(240, 100%, 5%); */
+    font-weight: bold;
+    /* width: 50%; */
+}
+
+.title p {
+    font-size: 18px;
+    /* width: 50%; */
+    /* background-color: ; */
+}
+
+.title_p button{
+    padding: 10px;
+    margin-top: 30px;
+    width: 180px;
+    text-align: center;
+    background-color: hsl(5, 85%, 63%);
+    cursor: pointer;
 }
