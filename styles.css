@@ -2,10 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
     margin: 80px 120px;
+}
+body p {
+    font-size: 15px;
 }
 .navbar {
     display: flex;
@@ -30,17 +34,26 @@ body {
     font-size: 1rem;
     font-weight: 500;
     opacity: 0.7;
+    transition: all 0.4s;
+
 }
 .navbar__list a:hover {
     opacity: 1;
     color: hsl(5, 85%, 63%);
 }
-.bloc__left {
-    display: flex;
-    flex-direction: column;
-    float: left;
+.content {
+    display: grid;
+    /* justify-content: space-between; */
+    /* align-items: center; */
     gap: 20px;
-    width: 60%;
+}
+.bloc__left {
+    grid-area: 1 / 1 / 2 / 2;
+    /* display: flex;
+    flex-direction: column; */
+    /* float: left; */
+    /* gap: 20px; */
+    /* width: 60%; */
 }
 .title {
     display: flex;
@@ -56,12 +69,6 @@ body {
     /* width: 50%; */
 }
 
-.title p {
-    font-size: 18px;
-    /* width: 50%; */
-    /* background-color: ; */
-}
-
 .title_p button{
     padding: 10px;
     margin-top: 30px;
@@ -69,4 +76,71 @@ body {
     text-align: center;
     background-color: hsl(5, 85%, 63%);
     cursor: pointer;
+    font-size: 15px;
+}
+.title_p button:hover {
+    color: #fff;
+    background-color: hsl(240, 100%, 5%);
+    transition: all 0.4s;
+}
+.bloc_right {
+    padding: 30px;
+    grid-area: 1 / 3 / 2 / 4;
+    background-color: hsl(240, 100%, 5%);
+    color: #fff;
+}
+.bloc_right h1 {
+    color: hsl(35, 77%, 62%);
+    font-size: 40px;
+}
+.bloc_right h2 {
+    font-size: 20px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.bloc_right h2:hover {
+    color: hsl(35, 77%, 62%);
+    transition: all 0.4s;
+}
+.bloc_right p {
+    letter-spacing: 0.1em;
+}
+hr {
+    border: 1px solid ;
+    /* width: 50%; */
+    margin: 20px 0;
+}
+.footer {
+    display: flex;
+    gap: 10px;
+    margin: 40px 0;
+}
+.first_bloc {
+    display: flex;
+    /* width: 30%; */
+    gap: 25px;
+}
+.first_bloc img {
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.second_bloc h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: color 0.4s;
+}
+.second_bloc h2:hover {
+    color: hsl(5, 85%, 63%);
+}
+.second_bloc p{
+    
+    font-size: 15px;
+    width: 220px;
+}
+
+.second_bloc h1 {
+    color: hsl(5, 85%, 63%);
 }
